@@ -11,6 +11,19 @@ def test_validatecomponents(page: Page,navigateToPage):
         
 def test_validateheaders(page:Page, naigateToPage):
         expect(page.locator("#twotabsearchtextbox")).to_be_visible()
-            
+        
+#         1st time workflow
+#         git init 
+#         git add .
+#         git commit -m "first commit"
+#         git branch -M main
+#         git remote add origin <GitHub URL>
+#         git push -u origin main
+        
+#         2nd time workflow 
+#         git remote add origin <GitHub URL>
+#         git branch -M main
+#         git push -u origin main
+
        
         
