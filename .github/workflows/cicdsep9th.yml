@@ -13,16 +13,27 @@ name: playwright python automation sep 9th
 
 #on: [push, pull_request]
 #dd
+#corn
 on:
     push:
         branches: [ "main" ]
     pull_request:
         branches: [ "main" ]
     workflow_dispatch:
-
+    schedule:
+      - cron: '45 11 10 9 *'
+        timezone: "America/New_York"
+    repository_dispatch:
+        types: [run-playwright-tests]
+#min hrs day month year
+#test
 jobs:
     test:
         runs-on: ubuntu-latest
+        env:
+            username: ${{vars.username}}
+            pwd: ${{secrets.pwd}}
+
         steps:
             - uses: actions/checkout@v5
             - uses: actions/setup-python@v6
