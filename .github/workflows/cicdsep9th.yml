@@ -21,7 +21,7 @@ on:
         branches: [ "main" ]
     workflow_dispatch:
     schedule:    
-       - cron: '01 11 10 09 *'
+       - cron: '20 11 10 09 *'
 #min hrs day month year
 #test
 jobs:
