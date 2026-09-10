@@ -1,5 +1,6 @@
-from playwright.sync_api import sync_playwright, expect
+from playwright.sync_api import sync_playwright, expect, Page
 import re
+
 import pytest
 
 # @pytest.fixture()
@@ -12,5 +13,18 @@ import pytest
 
 
 @pytest.fixture()
-def navigateToPage(page):
-    page.goto("https://www.amazon.com/") 
+def navigateToPage(page: Page):
+    page.goto(
+        "https://www.amazon.com/",
+        wait_until="domcontentloaded"
+    )
+
+    continue_button = page.get_by_role(
+        "button",
+        name="Continue shopping"
+    )
+
+    if continue_button.count() > 0:
+        continue_button.first.click()
+
+    return page

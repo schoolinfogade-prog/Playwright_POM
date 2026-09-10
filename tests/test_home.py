@@ -14,9 +14,9 @@ def test_validatecomponents(page: Page,navigateToPage):
 def test_validateheaders(page:Page, navigateToPage):
         expect(page.locator("#twotabsearchtextbox")).to_be_visible()
         
-add=lambda a,b:a+b
+# add=lambda a,b:a+b
 
-print(add(3,5))    
+# print(add(3,5))    
     
 @pytest.mark.test4
 def test_validatecomponentsneg(page: Page,navigateToPage):
