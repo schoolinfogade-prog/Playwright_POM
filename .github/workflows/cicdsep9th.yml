@@ -12,30 +12,45 @@
 name: playwright python automation sep 9th
 
 #on: [push, pull_request]
-
+#dd
 on:
     push:
         branches: [ "main" ]
     pull_request:
         branches: [ "main" ]
+    workflow_dispatch:
 
 jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
-            - uses: actions/setup-python@v4
+            - uses: actions/checkout@v5
+            - uses: actions/setup-python@v6
+           
               with:
                   python-version: 3.11
             - run: pip install -r requirements.txt
             - run: playwright install
-            - run: pytest -n 6 --alluredir=allure-results
+            - name: Run tests with pytest
+              run: pytest -n 6 --alluredir=allure-results
+              if: always()
             - run: |
                 sudo apt-get update
                 sudo apt-get install -y unzip wget
-                wget https://github.com/allure-framework/allure2/releases/download/2.46.1/allure-2.46.1.zip
-                unzip allure-2.46.1.zip
-                sudo mv allure-2.46.1 /opt/allure
-                sudo ln -s /opt/allure-2.46.1/bin/allure /usr/bin/allure
-            - run: allure generate allure-results -o allure-report --clean
+                 wget -q https://github.com/allure-framework/allure2/releases/download/2.46.1/allure-2.46.1.zip
 
+                unzip -q allure-2.46.1.zip
+
+                sudo mv allure-2.46.1 /opt/allure
+
+                sudo ln -sf /opt/allure/bin/allure /usr/local/bin/allure
+              if: always()
+            - run: allure generate allure-results -o allure-report --clean
+            
+            - name: Deploy Allure Report to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v4
+              if: always()
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_branch: gh-pages
+                publish_dir: allure-report

@@ -3,7 +3,7 @@ import re, pytest
 from pages.homepage import homepage
 
 @pytest.mark.test4
-def test_validatecomponents(page: Page,navigateToAmazon):
+def test_validatecomponents(page: Page,navigateToPage):
         homepageobj=homepage(page) 
        # homepageobj.clickonacct()
         homepageobj.validate()
@@ -11,19 +11,19 @@ def test_validatecomponents(page: Page,navigateToAmazon):
         expect(page).to_have_url("https://www.amazon.com/")
         
 @pytest.mark.test4
-def test_validateheaders(page:Page, navigateToAmazon):
+def test_validateheaders(page:Page, navigateToPage):
         expect(page.locator("#twotabsearchtextbox")).to_be_visible()
         
-add=lambda a,b:a+b
+# add=lambda a,b:a+b
 
-print(add(3,5))    
+# print(add(3,5))    
     
 @pytest.mark.test4
-def test_validatecomponentsneg(page: Page,navigateToAmazon):
+def test_validatecomponentsneg(page: Page,navigateToPage):
         homepageobj=homepage(page) 
        # homepageobj.clickonacct()
         homepageobj.validate()
-        expect(page).to_have_title(re.compile("Amazon1"))
+        expect(page).to_have_title(re.compile("Amazon"))
         expect(page).to_have_url("https://www.amazon.com/")
         
 #         1st time workflow
