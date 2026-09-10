@@ -12,5 +12,5 @@ import pytest
 
 
 @pytest.fixture()
-def navigateToAmazon(page):
+def navigateToPage(page):
     page.goto("https://www.amazon.com/") 
