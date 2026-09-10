@@ -1,0 +1,33 @@
+# 1. get laptop
+# 2.install python 3.11
+# 3. clone my repo
+# 4. requirements.txt
+# 5. playwright install
+# 6. allure setup
+# 7. exucuting the test case
+# 8. generate the report
+
+
+
+name: developers repo
+
+#on: [push, pull_request]
+#dd
+#corn
+on:
+    push:
+       
+     
+#min hrs day month year
+#test
+jobs:
+    trigger:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Trigger playwright CICD
+              run: |
+                curl -L -X POST \
+                  -H "Accept: application/vnd.github+json" \
+                  -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+                  https://api.github.com/repos/${{ vars.Playwirght_POM }}/actions/workflows/cicdsep9th.yml/dispatches \
+                  -d '{"ref":"main"}'

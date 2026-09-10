@@ -51,10 +51,12 @@ def test_exceladd():
   
 @pytest.mark.datahandling     
 def test_CLI():
-    #load_dotenv(".env", override=True)
-    load_dotenv(os.getenv("envfile"))
+    load_dotenv(".env", override=True)
+    
+    #load_dotenv(os.getenv("envfile"))
     #usname=os.getenv("username","testuser")
-    usname11=os.getenv("username") 
+    usname11=os.getenv("username", "pwd") 
+    print(" i am CLI")
     print(usname11)
 
 def test_json_file_read():

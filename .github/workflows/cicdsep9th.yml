@@ -20,9 +20,11 @@ on:
     pull_request:
         branches: [ "main" ]
     workflow_dispatch:
-     schedule:
+    schedule:
       - cron: '45 11 10 9 *'
-      timezone: "America/New_York"
+        timezone: "America/New_York"
+    repository_dispatch:
+        types: [run-playwright-tests]
 #min hrs day month year
 #test
 jobs:
