@@ -58,6 +58,6 @@ def test_CLI():
     print(usname11)
 
 def test_json_file_read():
-    data = jsonhandling1("testdata\\creds.json")
+    data = jsonhandling1("testdata\creds.json")
     assert data["positive"]["iphone1"] == "iphone7"
     assert data["positive"]["iphone2"] == "iphone8"

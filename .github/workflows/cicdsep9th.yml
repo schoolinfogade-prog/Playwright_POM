@@ -30,7 +30,9 @@ jobs:
                   python-version: 3.11
             - run: pip install -r requirements.txt
             - run: playwright install
-            - run: pytest -n 6 --alluredir=allure-results
+            - name: Run tests with pytest
+              run: pytest -n 6 --alluredir=allure-results
+              if: always()
             - run: |
                 sudo apt-get update
                 sudo apt-get install -y unzip wget
@@ -38,5 +40,6 @@ jobs:
                 unzip allure-2.46.1.zip
                 sudo mv allure-2.46.1 /opt/allure
                 sudo ln -s /opt/allure-2.46.1/bin/allure /usr/bin/allure
+                if: always()
             - run: allure generate allure-results -o allure-report --clean
 
