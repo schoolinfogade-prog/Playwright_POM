@@ -20,13 +20,18 @@ on:
     pull_request:
         branches: [ "main" ]
     workflow_dispatch:
-    schedule:    
-       - cron: '20 11 10 09 *'
+     schedule:
+      - cron: '45 11 10 9 *'
+      timezone: "America/New_York"
 #min hrs day month year
 #test
 jobs:
     test:
         runs-on: ubuntu-latest
+        env:
+            username: ${{vars.username}}
+            pwd: ${{secrets.pwd}}
+
         steps:
             - uses: actions/checkout@v5
             - uses: actions/setup-python@v6
