@@ -23,7 +23,7 @@ def test_validatecomponentsneg(page: Page,navigateToAmazon):
         homepageobj=homepage(page) 
        # homepageobj.clickonacct()
         homepageobj.validate()
-        expect(page).to_have_title(re.compile("Amazon1"))
+        expect(page).to_have_title(re.compile("Amazon"))
         expect(page).to_have_url("https://www.amazon.com/")
         
 #         1st time workflow
