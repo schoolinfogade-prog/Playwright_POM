@@ -12,7 +12,7 @@
 name: playwright python automation sep 9th
 
 #on: [push, pull_request]
-
+#dd
 on:
     push:
         branches: [ "main" ]
@@ -45,4 +45,11 @@ jobs:
                 sudo ln -sf /opt/allure/bin/allure /usr/local/bin/allure
               if: always()
             - run: allure generate allure-results -o allure-report --clean
-
+            
+            - name: Deploy Allure Report to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v4
+              if: always()
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_branch: gh-pages
+                publish_dir: allure-report
