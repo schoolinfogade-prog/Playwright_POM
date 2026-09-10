@@ -1,16 +1,30 @@
 from playwright.sync_api import sync_playwright, expect, Page
-import re
+import re, pytest
 from pages.homepage import homepage
 
-def test_validatecomponents(page: Page,navigateToPage):
-        homepageobj=homepage() 
-        homepageobj.ckickonacct()
+@pytest.mark.test4
+def test_validatecomponents(page: Page,navigateToAmazon):
+        homepageobj=homepage(page) 
+       # homepageobj.clickonacct()
         homepageobj.validate()
         expect(page).to_have_title(re.compile("Amazon"))
         expect(page).to_have_url("https://www.amazon.com/")
         
-def test_validateheaders(page:Page, naigateToPage):
+@pytest.mark.test4
+def test_validateheaders(page:Page, navigateToAmazon):
         expect(page.locator("#twotabsearchtextbox")).to_be_visible()
+        
+add=lambda a,b:a+b
+
+print(add(3,5))    
+    
+@pytest.mark.test4
+def test_validatecomponentsneg(page: Page,navigateToAmazon):
+        homepageobj=homepage(page) 
+       # homepageobj.clickonacct()
+        homepageobj.validate()
+        expect(page).to_have_title(re.compile("Amazon1"))
+        expect(page).to_have_url("https://www.amazon.com/")
         
 #         1st time workflow
 #         git init 

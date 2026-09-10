@@ -1,0 +1,41 @@
+# 1. get laptop
+# 2.install python 3.11
+# 3. clone my repo
+# 4. requirements.txt
+# 5. playwright install
+# 6. allure setup
+# 7. exucuting the test case
+# 8. generate the report
+
+
+
+name: playwright python automation sep 9th
+
+#on: [push, pull_request]
+
+on:
+    push:
+        branches: [ "main" ]
+    pull_request:
+        branches: [ "main" ]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-python@v4
+              with:
+                  python-version: 3.11
+            - run: pip install -r requirements.txt
+            - run: playwright install
+            - run: pytest -n 6 --alluredir=allure-results
+            - run: |
+                sudo apt-get update
+                sudo apt-get install -y unzip wget
+                wget https://github.com/allure-framework/allure2/releases/download/2.46.1/allure-2.46.1.zip
+                unzip allure-2.46.1.zip
+                sudo mv allure-2.46.1 /opt/allure
+                sudo ln -s /opt/allure-2.46.1/bin/allure /usr/bin/allure
+            - run: allure generate allure-results -o allure-report --clean
+

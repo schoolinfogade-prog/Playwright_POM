@@ -1,0 +1,13 @@
+
+
+{
+    "positive":{
+
+    "iphone1":"iphone7",    
+    "iphone2":"iphone8"
+    },
+    "negative":{
+    "iphone4":"iphone5",
+    "iphone6":"iphone7"
+    }
+}

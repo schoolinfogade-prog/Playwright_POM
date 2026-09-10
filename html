@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">html</h1>
+    <p>Report generated on 09-Sep-2026 at 09:11:57 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</td>
+        </tr>
+      </tbody>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">3 tests took 00:00:11.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" >
+            <span class="failed">1 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" >
+            <span class="passed">2 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled>
+            <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled>
+            <span class="retried">0 Retried,</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.0&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.4&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;base-url&#34;: &#34;2.1.0&#34;, &#34;html&#34;: &#34;4.2.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;playwright&#34;: &#34;0.9.0&#34;}, &#34;JAVA_HOME&#34;: &#34;C:\\Program Files\\Java\\jdk-23&#34;, &#34;Base URL&#34;: &#34;&#34;}, &#34;tests&#34;: {&#34;tests/test_home.py::test_validatecomponents[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_home.py::test_validatecomponents[chromium]&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_home.py::test_validatecomponents[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_home.py::test_validateheaders[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_home.py::test_validateheaders[chromium]&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_home.py::test_validateheaders[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_home.py::test_validatecomponentsneg[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_home.py::test_validatecomponentsneg[chromium]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_home.py::test_validatecomponentsneg[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;page = &amp;lt;Page url=&amp;#x27;https://www.amazon.com/&amp;#x27;&amp;gt;, navigateToAmazon = None\n\n    @pytest.mark.test4\n    def test_validatecomponentsneg(page: Page,navigateToAmazon):\n            homepageobj=homepage(page)\n           # homepageobj.clickonacct()\n            homepageobj.validate()\n&amp;gt;           expect(page).to_have_title(re.compile(&amp;quot;Amazon1&amp;quot;))\nE           AssertionError: Page title expected to be &amp;#x27;re.compile(&amp;#x27;Amazon1&amp;#x27;)&amp;#x27;\nE           Actual value: Amazon.com. Spend less. Smile more. \nE           Call log:\nE             - Expect &amp;quot;to_have_title&amp;quot; with timeout 5000ms\nE               11 \u00d7 locator resolved to &amp;lt;html lang=&amp;quot;en-us&amp;quot; data-19ax5a9jf=&amp;quot;dingo&amp;quot; data-aui-build-date=&amp;quot;3.26.7-2026-09-03&amp;quot; class=&amp;quot;a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition null&amp;quot;&amp;gt;\u2026&amp;lt;/html&amp;gt;\nE                  - unexpected value &amp;quot;Amazon.com. Spend less. Smile more.&amp;quot;\nE           \nE           Aria snapshot:\nE           - navigation &amp;quot;Shortcuts menu&amp;quot;:\nE             - heading &amp;quot;Skip to&amp;quot; [level=2]\nE             - list &amp;quot;Skip to&amp;quot;:\nE               - listitem:\nE                 - link &amp;quot;main content&amp;quot;:\nE                   - /url: &amp;quot;#skippedLink&amp;quot;\nE                   - text: Main content\nE             - heading &amp;quot;Keyboard shortcuts&amp;quot; [level=2]\nE             - list &amp;quot;Keyboard shortcuts&amp;quot;:\nE               - listitem:\nE                 - link &amp;quot;Search, alt, forward slash&amp;quot;:\nE                   - /url: javascript:void(0)\nE               - listitem:\nE                 - link &amp;quot;Cart, shift, alt, c&amp;quot;:\nE                   - /url: javascript:void(0)\nE               - listitem:\nE                 - link &amp;quot;Home, shift, alt, h&amp;quot;:\nE                   - /url: javascript:void(0)\nE               - listitem:\nE                 - link &amp;quot;Your orders, shift, alt, o&amp;quot;:\nE                   - /url: javascript:void(0)\nE               - listitem:\nE                 - button &amp;quot;Show/hide shortcuts, shift, alt, z&amp;quot;\nE             - text: To move between items, use your keyboard&amp;#x27;s up or down arrows.\nE           - banner:\nE             - navigation &amp;quot;Primary&amp;quot;:\nE               - link &amp;quot;Amazon&amp;quot;:\nE                 - /url: /ref=nav_logo\nE               - button &amp;quot;Delivering to Wesley Ch... 33544 Update location&amp;quot;\nE               - search:\nE                 - text: All\nE                 - combobox &amp;quot;Select the department you want to search in&amp;quot;:\nE                   - option &amp;quot;All Departments&amp;quot; [selected]\nE                   - option &amp;quot;Alexa Skills&amp;quot;\nE                   - option &amp;quot;Amazon Autos&amp;quot;\nE                   - option &amp;quot;Amazon Devices&amp;quot;\nE                   - option &amp;quot;Amazon Global Store&amp;quot;\nE                   - option &amp;quot;Amazon Haul&amp;quot;\nE                   - option &amp;quot;Amazon One Medical&amp;quot;\nE                   - option &amp;quot;Amazon Pharmacy&amp;quot;\nE                   - option &amp;quot;Amazon Resale&amp;quot;\nE                   - option &amp;quot;Appliances&amp;quot;\nE                   - option &amp;quot;Apps &amp;amp; Games&amp;quot;\nE                   - option &amp;quot;Arts, Crafts &amp;amp; Sewing&amp;quot;\nE                   - option &amp;quot;Audible Books &amp;amp; Originals&amp;quot;\nE                   - option &amp;quot;Automotive Parts &amp;amp; Accessories&amp;quot;\nE                   - option &amp;quot;Baby&amp;quot;\nE                   - option &amp;quot;Beauty &amp;amp; Personal Care&amp;quot;\nE                   - option &amp;quot;Books&amp;quot;\nE                   - option &amp;quot;CDs &amp;amp; Vinyl&amp;quot;\nE                   - option &amp;quot;Cell Phones &amp;amp; Accessories&amp;quot;\nE                   - option &amp;quot;Clothing, Shoes &amp;amp; Jewelry&amp;quot;\nE                   - option &amp;quot;Women&amp;#x27;s Clothing, Shoes &amp;amp; Jewelry&amp;quot;\nE                   - option &amp;quot;Men&amp;#x27;s Clothing, Shoes &amp;amp; Jewelry&amp;quot;\nE                   - option &amp;quot;Girl&amp;#x27;s Clothing, Shoes &amp;amp; Jewelry&amp;quot;\nE                   - option &amp;quot;Boy&amp;#x27;s Clothing, Shoes &amp;amp; Jewelry&amp;quot;\nE                   - option &amp;quot;Baby Clothing, Shoes &amp;amp; Jewelry&amp;quot;\nE                   - option &amp;quot;Collectibles &amp;amp; Fine Art&amp;quot;\nE                   - option &amp;quot;Computers&amp;quot;\nE                   - option &amp;quot;Credit and Payment Cards&amp;quot;\nE                   - option &amp;quot;Digital Music&amp;quot;\nE                   - option &amp;quot;Electronics&amp;quot;\nE                   - option &amp;quot;Garden &amp;amp; Outdoor&amp;quot;\nE                   - option &amp;quot;Gift Cards&amp;quot;\nE                   - option &amp;quot;Grocery &amp;amp; Gourmet Food&amp;quot;\nE                   - option &amp;quot;Handmade&amp;quot;\nE                   - option &amp;quot;Health, Household &amp;amp; Baby Care&amp;quot;\nE                   - option &amp;quot;Home &amp;amp; Business Services&amp;quot;\nE                   - option &amp;quot;Home &amp;amp; Kitchen&amp;quot;\nE                   - option &amp;quot;Industrial &amp;amp; Scientific&amp;quot;\nE                   - option &amp;quot;Just for Prime&amp;quot;\nE                   - option &amp;quot;Kindle Store&amp;quot;\nE                   - option &amp;quot;Luggage &amp;amp; Travel Gear&amp;quot;\nE                   - option &amp;quot;Luxury Stores&amp;quot;\nE                   - option &amp;quot;Magazine Subscriptions&amp;quot;\nE                   - option &amp;quot;Movies &amp;amp; TV&amp;quot;\nE                   - option &amp;quot;Musical Instruments&amp;quot;\nE                   - option &amp;quot;Office Products&amp;quot;\nE                   - option &amp;quot;Pet Supplies&amp;quot;\nE                   - option &amp;quot;Petco&amp;quot;\nE                   - option &amp;quot;Premium Beauty&amp;quot;\nE                   - option &amp;quot;Prime Video&amp;quot;\nE                   - option &amp;quot;Same-Day Store&amp;quot;\nE                   - option &amp;quot;Smart Home&amp;quot;\nE                   - option &amp;quot;Software&amp;quot;\nE                   - option &amp;quot;Sports &amp;amp; Outdoors&amp;quot;\nE                   - option &amp;quot;Subscribe &amp;amp; Save&amp;quot;\nE                   - option &amp;quot;Subscription Boxes&amp;quot;\nE                   - option &amp;quot;Tools &amp;amp; Home Improvement&amp;quot;\nE                   - option &amp;quot;Toys &amp;amp; Games&amp;quot;\nE                   - option &amp;quot;Under $10&amp;quot;\nE                   - option &amp;quot;Video Games&amp;quot;\nE                   - option &amp;quot;Whole Foods Market&amp;quot;\nE                   - option &amp;quot;Winn Dixie&amp;quot;\nE                 - searchbox &amp;quot;Search Amazon&amp;quot;\nE                 - button &amp;quot;Go&amp;quot;\nE               - link &amp;quot;Choose a language for shopping in Amazon United States. The current selection is English (EN).&amp;quot;:\nE                 - /url: /customer-preferences/edit?ie=UTF8&amp;amp;preferencesReturnUrl=%2F&amp;amp;ref_=topnav_lang\nE                 - img &amp;quot;United States&amp;quot;\nE                 - text: EN\nE               - button &amp;quot;Expand to Change Language or Country&amp;quot;\nE               - link &amp;quot;Hello, sign in Account &amp;amp; Lists&amp;quot;:\nE                 - /url: https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&amp;amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;amp;openid.assoc_handle=usflex&amp;amp;openid.mode=checkid_setup&amp;amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\nE               - button &amp;quot;Expand Account and Lists&amp;quot;\nE               - link &amp;quot;Returns &amp;amp; Orders&amp;quot;:\nE                 - /url: /gp/css/order-history?ref_=nav_orders_first\nE               - link &amp;quot;0 items in cart&amp;quot;:\nE                 - /url: /gp/cart/view.html?ref_=nav_cart\nE               - button &amp;quot;Open All Categories Menu&amp;quot;: All\nE               - list:\nE                 - listitem:\nE                   - link &amp;quot;Health AI&amp;quot;:\nE                     - /url: https://health.amazon.com/health-ai?ref_=nav_cs_health_ai\nE                 - listitem:\nE                   - link &amp;quot;Amazon Haul&amp;quot;:\nE                     - /url: /haul/store?ref_=nav_cs_hul_disb\nE                 - listitem:\nE                   - link &amp;quot;Medical Care&amp;quot;:\nE                     - /url: https://health.amazon.com/?ref_=nav_cs_medical_care_health_home\nE                   - button &amp;quot;Medical Care Details&amp;quot;\nE                 - listitem:\nE                   - link &amp;quot;Amazon Basics&amp;quot;:\nE                     - /url: /Amazon_Basics?channel=discovbar&amp;amp;field-lbr_brands_browse-bin=AmazonBasics&amp;amp;ref_=nav_cs_amazonbasics\nE                 - listitem:\nE                   - link &amp;quot;Best Sellers&amp;quot;:\nE                     - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers\nE                 - listitem:\nE                   - link &amp;quot;Prime&amp;quot;:\nE                     - /url: /prime?ref_=nav_cs_primelink_nonmember\nE                   - button &amp;quot;Prime Details&amp;quot;\nE                 - listitem:\nE                   - link &amp;quot;New Releases&amp;quot;:\nE                     - /url: /gp/new-releases/?ref_=nav_cs_newreleases\nE                 - listitem:\nE                   - link &amp;quot;Groceries&amp;quot;:\nE                     - /url: /fmc/grocery-gateway?gsc=fe16aGPfFs46S&amp;amp;ref_=nav_cs_groceries\nE                 - listitem:\nE                   - link &amp;quot;Whole Foods&amp;quot;:\nE                     - /url: /alm/storefront?almBrandId=VUZHIFdob2xlIEZvb2Rz&amp;amp;ref_=nav_cs_whole_foods\nE                 - listitem:\nE                   - link &amp;quot;Today&amp;#x27;s Deals&amp;quot;:\nE                     - /url: /deals?ref_=nav_cs_gb\nE                 - listitem:\nE                   - link &amp;quot;Books&amp;quot;:\nE                     - /url: /books-used-books-textbooks/b/?ie=UTF8&amp;amp;node=283155&amp;amp;ref_=nav_cs_books\nE                 - listitem:\nE                   - link &amp;quot;Gift Cards&amp;quot;:\nE                     - /url: /gift-cards/b/?ie=UTF8&amp;amp;node=2238192011&amp;amp;ref_=nav_cs_gc\nE                   - button &amp;quot;Gift Cards Details&amp;quot;\nE                 - listitem:\nE                   - link &amp;quot;Sell&amp;quot;:\nE                     - /url: /b/?_encoding=UTF8&amp;amp;ld=AZUSSOA-sell&amp;amp;node=12766669011&amp;amp;ref_=nav_cs_sell\nE                 - listitem:\nE                   - link &amp;quot;Music&amp;quot;:\nE                     - /url: /music/player?ref_=nav_cs_music\nE                 - listitem:\nE                   - link &amp;quot;Fashion&amp;quot;:\nE                     - /url: /amazon-fashion/b/?ie=UTF8&amp;amp;node=7141123011&amp;amp;ref_=nav_cs_fashion\nE                 - listitem:\nE                   - link &amp;quot;Registry&amp;quot;:\nE                     - /url: /gp/browse.html?node=16115931011&amp;amp;ref_=nav_cs_registry\nE                 - listitem:\nE                   - link &amp;quot;Amazon Home&amp;quot;:\nE                     - /url: /home-garden-kitchen-furniture-bedding/b/?ie=UTF8&amp;amp;node=1055398&amp;amp;ref_=nav_cs_home\nE                   - button &amp;quot;Amazon Home Details&amp;quot;\nE                 - listitem:\nE                   - link &amp;quot;Toys &amp;amp; Games&amp;quot;:\nE                     - /url: /toys/b/?ie=UTF8&amp;amp;node=165793011&amp;amp;ref_=nav_cs_toys\nE                   - button &amp;quot;Toys &amp;amp; Games Details&amp;quot;\nE                 - listitem:\nE                   - link &amp;quot;Automotive&amp;quot;:\nE                     - /url: /automotive-auto-truck-replacements-parts/b/?ie=UTF8&amp;amp;node=15684181&amp;amp;ref_=nav_cs_automotive\nE                 - listitem:\nE                   - link &amp;quot;Baby&amp;quot;:\nE                     - /url: /baby-car-seats-strollers-bedding/b/?ie=UTF8&amp;amp;node=165796011&amp;amp;ref_=nav_cs_baby\nE                 - listitem:\nE                   - link &amp;quot;Home Improvement&amp;quot;:\nE                     - /url: /Tools-and-Home-Improvement/b/?ie=UTF8&amp;amp;node=228013&amp;amp;ref_=nav_cs_hi\nE                   - button &amp;quot;Home Improvement Details&amp;quot;\nE                 - listitem:\nE                   - link &amp;quot;Sports &amp;amp; Outdoors&amp;quot;:\nE                     - /url: /sports-outdoors/b/?ie=UTF8&amp;amp;node=3375251&amp;amp;ref_=nav_cs_sports\nE                 - listitem:\nE                   - link &amp;quot;Smart Home&amp;quot;:\nE                     - /url: /Smart-Home/b/?ie=UTF8&amp;amp;node=6563140011&amp;amp;ref_=nav_cs_smart_home\nE                 - listitem:\nE                   - link &amp;quot;Pharmacy&amp;quot;:\nE                     - /url: https://pharmacy.amazon.com/?nodl=0&amp;amp;ref_=nav_cs_pharmacy\nE                 - listitem:\nE                   - link &amp;quot;Everyday&amp;quot;:\nE                     - /url: /everyday-essentials?ref_=nav_cs_ee\nE           - main:\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Get Grubhub+ free with Prime Join Prime Grubhub Terms apply.&amp;quot;:\nE                   - /url: /prime/offer/embedded/grubhub/prime-deal/?_encoding=UTF8&amp;amp;ref_=ellis_gh_us_onsite_hp_wd_fo&amp;amp;pd_rd_w=UFCCc&amp;amp;content-id=amzn1.sym.e487c189-1c73-4c54-a2f3-c75b7075ba73&amp;amp;pf_rd_p=e487c189-1c73-4c54-a2f3-c75b7075ba73&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b\nE                   - heading &amp;quot;Get Grubhub+ free with Prime&amp;quot; [level=3]\nE                   - button &amp;quot;Join Prime&amp;quot;\nE                   - img &amp;quot;Grubhub&amp;quot;\nE                   - text: Terms apply.\nE               - listitem:\nE                 - link &amp;quot;Shop our Top 100+ Halloween candy&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=220434592011&amp;amp;redirectionContext=%7B%22asins%22%3A%22B0D9YWFFGV%2CB0GXC2WHP4%2CB0DVMFXCWT%2CB0CTN227GR%2CB0CWJ4GSMN%22%2C%22filters%22%3A%7B%22p_n_condition-type%22%3A%226461716011%22%2C%22p_n_availability%22%3A%222661600011%22%7D%7D&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22219892858011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&amp;amp;ref_=HWN26-dpt-top100-candy-dt-da_cta&amp;amp;pd_rd_w=YXPb4&amp;amp;content-id=amzn1.sym.57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_p=57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b#dossier-asin-grid\nE                   - heading &amp;quot;Shop our Top 100+ Halloween candy&amp;quot; [level=3]\nE                 - list:\nE                   - listitem:\nE                     - link &amp;quot;Wrigley&amp;#x27;s Skittles Fun Size Original, Wild Berry, and Sour Chewy Individually Wrapped Stocking Stuffers Christmas Candy Variety Pack, 26.46 Oz Bulk Bag&amp;quot;:\nE                       - /url: /SKITTLES-Original-Berry-Chewy-Variety/dp/B0CQTPL6CL/?_encoding=UTF8&amp;amp;pd_rd_w=YXPb4&amp;amp;content-id=amzn1.sym.57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_p=57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b&amp;amp;ref_=pd_hp_d_r_atf_top-100-candy\nE                       - img &amp;quot;Wrigley&amp;#x27;s Skittles Fun Size Original, Wild Berry, and Sour Chewy Individually Wrapped Stocking Stuffers Christmas Candy Variety Pack, 26.46 Oz Bulk Bag&amp;quot;\nE                   - listitem:\nE                     - link &amp;quot;Hershey&amp;#x27;s Assorted Chocolate Halloween Candy Bulk Variety Pack, 80 oz&amp;quot;:\nE                       - /url: /HERSHEYS-Holiday-Assortment-Chocolate-REESES/dp/B07CLDLHDQ/?_encoding=UTF8&amp;amp;pd_rd_w=YXPb4&amp;amp;content-id=amzn1.sym.57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_p=57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b&amp;amp;ref_=pd_hp_d_r_atf_top-100-candy\nE                       - img &amp;quot;Hershey&amp;#x27;s Assorted Chocolate Halloween Candy Bulk Variety Pack, 80 oz&amp;quot;\nE                   - listitem:\nE                     - link &amp;quot;Jelly Belly Harry Potter&amp;#x27;s Favorites, Gift Pack of 4 (Butterbeer Barrel Tin, Bertie Bott&amp;#x27;s Every Flavor Jelly Beans, &amp;amp; Jelly Slugs Chewy Candy)&amp;quot;:\nE                       - /url: /Potters-Favorites-Butterbeer-Barrel-Magical/dp/B0CBL7751T/?_encoding=UTF8&amp;amp;pd_rd_w=YXPb4&amp;amp;content-id=amzn1.sym.57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_p=57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b&amp;amp;ref_=pd_hp_d_r_atf_top-100-candy\nE                       - img &amp;quot;Jelly Belly Harry Potter&amp;#x27;s Favorites, Gift Pack of 4 (Butterbeer Barrel Tin, Bertie Bott&amp;#x27;s Every Flavor Jelly Beans, &amp;amp; Jelly Slugs Chewy Candy)&amp;quot;\nE                   - listitem:\nE                     - link &amp;quot;Wonka Runts Hard, Chewy &amp;amp; Fruity Candy, 5 Ounce Theater Candy Boxes (Pack of 12)&amp;quot;:\nE                       - /url: /Wonka-Runts-Hard-chewy-candies-Fruity-chewy-candy/dp/B00C2M5FYA/?_encoding=UTF8&amp;amp;pd_rd_w=YXPb4&amp;amp;content-id=amzn1.sym.57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_p=57338c1f-a435-4bea-aba9-2fbde39ba5e6&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b&amp;amp;ref_=pd_hp_d_r_atf_top-100-candy\nE                       - img &amp;quot;Wonka Runts Hard, Chewy &amp;amp; Fruity Candy, 5 Ounce Theater Candy Boxes (Pack of 12)&amp;quot;\nE               - listitem:\nE                 - heading &amp;quot;$2 flash deals just landed&amp;quot; [level=3]\nE                 - text: Score new price drops!\nE                 - img &amp;quot;Amazon Haul&amp;quot;\nE                 - link &amp;quot;$2 flash deals just landed&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;node=211766483011&amp;amp;ishaul=1&amp;amp;ref_=pd_hp_d_r_atf_unk&amp;amp;pd_rd_w=7xlVf&amp;amp;content-id=amzn1.sym.573f29ee-83ff-49af-8801-242990268064&amp;amp;pf_rd_p=573f29ee-83ff-49af-8801-242990268064&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b\nE                 - region &amp;quot;Video Player&amp;quot;:\nE                   - application\nE                   - button &amp;quot;Pause&amp;quot;\nE                 - text: Limit 2 per customer\nE               - listitem:\nE                 - link &amp;quot;The end of summer sale 15% off pre-loved pieces Amazon luxury logo The end of summer sale&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=207247666011&amp;amp;rh=n%3A207247666011&amp;amp;s=featured-rank&amp;amp;fs=true&amp;amp;qid=1787005309&amp;amp;xpid=8MdYy-5ev18ct&amp;amp;ref=sr_pg_1&amp;amp;pd_rd_w=itGPV&amp;amp;content-id=amzn1.sym.4a0e86ed-a924-4345-a5e4-8f646d07dcc7&amp;amp;pf_rd_p=4a0e86ed-a924-4345-a5e4-8f646d07dcc7&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=2Gecx&amp;amp;pd_rd_r=345f8957-e98b-4539-b7ec-185dc87f7a8a&amp;amp;ref_=pd_hp_d_r_stg_unk\nE                   - heading &amp;quot;The end of summer sale&amp;quot; [level=3]\nE                   - text: 15% off pre-loved pieces\nE                   - img &amp;quot;Amazon luxury logo&amp;quot;\nE                   - img &amp;quot;The end of summer sale&amp;quot;\nE               - listitem:\nE                 - text: Shop the trend\nE                 - heading &amp;quot;Bewitching finds for Halloween&amp;quot; [level=3]\nE                 - link &amp;quot;Shop the trend Bewitching finds for Halloween&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;node=220434596011&amp;amp;redirectionContext=%7B%22asins%22%3A%220593832361%2CB0CJ2H2Q4C%2CB0DNLX2NNB%2CB0FGDX8YMP%2CB0FR9D3SGK%22%2C%22filters%22%3A%7B%22p_n_condition-type%22%3A%226461716011%22%2C%22p_n_availability%22%3A%222661600011%22%7D%7D&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&amp;amp;ref_=trending&amp;amp;pd_rd_w=Ck3pJ&amp;amp;content-id=amzn1.sym.b962e66a-ab41-4766-bf83-1269bce1e8a5&amp;amp;pf_rd_p=b962e66a-ab41-4766-bf83-1269bce1e8a5&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b#dossier-asin-grid\nE                   - img &amp;quot;Shop the trend Bewitching finds for Halloween&amp;quot;\nE                 - region &amp;quot;Video Player&amp;quot;:\nE                   - application\nE                   - button &amp;quot;Play&amp;quot;\nE               - listitem:\nE                 - link &amp;quot;Top 100+ picks in outdoor decor&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;node=220434592011&amp;amp;redirectionContext=%7B%22asins%22%3A%22B0CB7579Z8%2CB0FFPGWF7Y%2CB0D7QCTPCB%2CB0CXQ7BJN9%2CB0DZFHZJZL%2CB0DZF4QCPX%22%2C%22filters%22%3A%7B%22p_n_condition-type%22%3A%226461716011%22%2C%22p_n_availability%22%3A%222661600011%22%7D%7D&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22219892867011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%5D&amp;amp;ref_=sample_fabric_non_personalized_cta&amp;amp;pd_rd_w=S3NGC&amp;amp;content-id=amzn1.sym.b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_p=b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b#dossier-asin-grid\nE                   - heading &amp;quot;Top 100+ picks in outdoor decor&amp;quot; [level=3]\nE                 - list:\nE                   - listitem:\nE                     - link &amp;quot;Haunted Hill Farm 8.0-Ft. Motion-Activated Towering Skeleton Animatronic&amp;quot;:\nE                       - /url: /Haunted-Hill-Farm-Motion-Activated-Animatronic/dp/B0CB74Q6PN/?_encoding=UTF8&amp;amp;pd_rd_w=S3NGC&amp;amp;content-id=amzn1.sym.b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_p=b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b&amp;amp;ref_=pd_hp_d_r_atf_top-100-outdoor-decor-select\nE                       - img &amp;quot;Haunted Hill Farm 8.0-Ft. Motion-Activated Towering Skeleton Animatronic&amp;quot;\nE                   - listitem:\nE                     - link &amp;quot;Mud Pie Light Up Halloween Doormat With Sound, Spooky Halloween Welcome Mat&amp;quot;:\nE                       - /url: /Mud-Pie-Halloween-Light-Doormat/dp/B0FFPZCQ7H/?_encoding=UTF8&amp;amp;pd_rd_w=S3NGC&amp;amp;content-id=amzn1.sym.b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_p=b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b&amp;amp;ref_=pd_hp_d_r_atf_top-100-outdoor-decor-select\nE                       - img &amp;quot;Mud Pie Light Up Halloween Doormat With Sound, Spooky Halloween Welcome Mat&amp;quot;\nE                   - listitem:\nE                     - link &amp;quot;GOOSH 4 FT Halloween Inflatable Cute Ghost Outdoor Decorations Blow Up Yard Ghost with Built-in LEDs for Indoor Garden Lawn Party Decor&amp;quot;:\nE                       - /url: /GOOSH-Halloween-Inflatable-Decoration-Clearance/dp/B08YJW3XZD/?_encoding=UTF8&amp;amp;pd_rd_w=S3NGC&amp;amp;content-id=amzn1.sym.b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_p=b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b&amp;amp;ref_=pd_hp_d_r_atf_top-100-outdoor-decor-select\nE                       - img &amp;quot;GOOSH 4 FT Halloween Inflatable Cute Ghost Outdoor Decorations Blow Up Yard Ghost with Built-in LEDs for Indoor Garden Lawn Party Decor&amp;quot;\nE                   - listitem:\nE                     - link &amp;quot;Minecraft Enderman Inflatable Lawn Decoration, Official Minecraft Party Decor, 8.5 Foot Inflating Enderman&amp;quot;:\nE                       - /url: /Minecraft-Enderman-Inflatable-Decor-Costume/dp/B0C7LN1KLH/?_encoding=UTF8&amp;amp;pd_rd_w=S3NGC&amp;amp;content-id=amzn1.sym.b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_p=b0735d1f-360a-4db9-8bbc-4951f32c2128&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b&amp;amp;ref_=pd_hp_d_r_atf_top-100-outdoor-decor-select\nE                       - img &amp;quot;Minecraft Enderman Inflatable Lawn Decoration, Official Minecraft Party Decor, 8.5 Foot Inflating Enderman&amp;quot;\nE               - listitem:\nE                 - text: New sportswear and more\nE                 - heading &amp;quot;Stay active with Nike&amp;quot; [level=3]\nE                 - img &amp;quot;Nike&amp;quot;\nE                 - link &amp;quot;New sportswear and more Stay active with Nike&amp;quot;:\nE                   - /url: /stores/page/E9C7C6A6-9A88-4959-A67F-4D44FC67320F/?_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;ref_=pd_hp_d_r_atf_unk&amp;amp;pd_rd_w=WpDpc&amp;amp;content-id=amzn1.sym.8af72b22-6428-4207-9d12-acf11b120b9f&amp;amp;pf_rd_p=8af72b22-6428-4207-9d12-acf11b120b9f&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VvdVD&amp;amp;pd_rd_r=dd8202f0-1e44-4c14-9691-6f3a7318028b\nE                   - img &amp;quot;New sportswear and more Stay active with Nike&amp;quot;\nE                 - region &amp;quot;Video Player&amp;quot;:\nE                   - application\nE                   - button &amp;quot;Play&amp;quot;\nE               - listitem &amp;quot;Loading more&amp;quot;\nE             - link &amp;quot;Carousel next slide&amp;quot;:\nE               - /url: &amp;quot;#&amp;quot;\nE             - link &amp;quot;Shop 450+ gift card brands - Shop for all occasions&amp;quot;:\nE               - /url: /b/?_encoding=UTF8&amp;amp;node=2238192011&amp;amp;ref_=US_GC_CAL_GW_QuadCard_NonPurge_2026&amp;amp;pd_rd_w=jIE5O&amp;amp;content-id=amzn1.sym.3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_p=3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416\nE               - heading &amp;quot;Shop 450+ gift card brands&amp;quot; [level=3]\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Best sellers&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;k=gift%20card&amp;amp;i=gift-cards&amp;amp;rh=n%3A2238192011&amp;amp;s=exact-aware-popularity-rank&amp;amp;dc=&amp;amp;crid=2DZDDUSR1U24B&amp;amp;pf_rd_i=2238192011&amp;amp;pf_rd_m=A2R2RITDJNW1Q6&amp;amp;pf_rd_s=merchandised-search-12&amp;amp;qid=1782418553&amp;amp;rnid=85457740011&amp;amp;sprefix=gift%20card%2Cgift-cards%2C165&amp;amp;ref=sr_st_exact-aware-popularity-rank&amp;amp;ds=v1%3AUaafRZfgEcd2TZ7cYSF8Z7zf%2FjWbu1ZVY0TdkpD8JfQ&amp;amp;pd_rd_w=jIE5O&amp;amp;content-id=amzn1.sym.3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_p=3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Visa, Doordash, Ulta gift cards&amp;quot;\nE                   - text: Best sellers\nE               - listitem:\nE                 - link &amp;quot;eGift cards&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=gift-cards&amp;amp;bbn=2238192011&amp;amp;rh=n%3A2238192011%2Cp_n_format_browse-bin%3A2740964011&amp;amp;dc=&amp;amp;ds=v1%3AOb%2FOfQFpdbZIaH22Seb46yO%2BoUEoKpdS5evNQeByfng&amp;amp;_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;qid=1751924566&amp;amp;rnid=2528832011&amp;amp;ref=US_GC_CAL_GW_QuadCard_NonPurge_2026&amp;amp;pd_rd_w=jIE5O&amp;amp;content-id=amzn1.sym.3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_p=3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Amazon birthday and Uber gift cards&amp;quot;\nE                   - text: eGift cards\nE               - listitem:\nE                 - link &amp;quot;Physical gift card&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=gift-cards&amp;amp;bbn=2238192011&amp;amp;rh=n%3A2238192011%2Cp_n_format_browse-bin%3A2740967011&amp;amp;dc=&amp;amp;ds=v1%3AmanSeCqKG%2BeCGYeWFAl9uXpIh9oexFZvAfErCWAcUfQ&amp;amp;_encoding=UTF8&amp;amp;_encoding=UTF8%2CUTF8&amp;amp;qid=1751924522&amp;amp;rnid=2740963011&amp;amp;ref=US_GC_CAL_GW_QuadCard_NonPurge_2026&amp;amp;pd_rd_w=jIE5O&amp;amp;content-id=amzn1.sym.3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_p=3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Apple and Amazon birthday gift cards&amp;quot;\nE                   - text: Physical gift card\nE               - listitem:\nE                 - link &amp;quot;Reload balance&amp;quot;:\nE                   - /url: /dp/B0CHTVMXZJ/?_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;ref_=US_GC_CAL_GW_QuadCard_NonPurge_2026&amp;amp;pd_rd_w=jIE5O&amp;amp;content-id=amzn1.sym.3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_p=3280feb0-bc0f-4b4a-b34d-8573e15484e0&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416\nE                   - img &amp;quot;Amazon reload&amp;quot;\nE                   - text: Reload balance\nE             - link &amp;quot;Fall styles for all - Shop Amazon Essentials&amp;quot;:\nE               - /url: /stores/page/ED4B2AD1-489A-401F-A6A7-8D21CE8E0367/?_encoding=UTF8&amp;amp;ingress=0&amp;amp;visitId=ea1c852b-61e6-452e-895e-a0bf1873398e&amp;amp;channel=abpf26_4fe&amp;amp;pd_rd_w=JEkec&amp;amp;content-id=amzn1.sym.e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_p=e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE               - heading &amp;quot;Fall styles for all&amp;quot; [level=3]\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Men\u2019s&amp;quot;:\nE                   - /url: /stores/page/D88C00AC-CB0B-44F5-8847-29AF9A057D8F/?_encoding=UTF8&amp;amp;channel=aepf26_1fm&amp;amp;pd_rd_w=JEkec&amp;amp;content-id=amzn1.sym.e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_p=e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Men\u2019s&amp;quot;\nE                   - text: Men\u2019s\nE               - listitem:\nE                 - link &amp;quot;Women\u2019s&amp;quot;:\nE                   - /url: /stores/page/57A5BE4B-6946-4CF4-9283-99D5CE7A7B97/?_encoding=UTF8&amp;amp;channel=aepf26_1fw&amp;amp;pd_rd_w=JEkec&amp;amp;content-id=amzn1.sym.e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_p=e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Women\u2019s&amp;quot;\nE                   - text: Women\u2019s\nE               - listitem:\nE                 - link &amp;quot;Kids\u2019&amp;quot;:\nE                   - /url: /stores/page/46E660AB-9E6D-44A2-832B-7D81005B230D/?_encoding=UTF8&amp;amp;channel=aepf26_1fk&amp;amp;pd_rd_w=JEkec&amp;amp;content-id=amzn1.sym.e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_p=e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Kids\u2019&amp;quot;\nE                   - text: Kids\u2019\nE               - listitem:\nE                 - link &amp;quot;Accessories&amp;quot;:\nE                   - /url: /stores/page/79190B10-D00F-42D9-80BC-252CFCAD5916/?_encoding=UTF8&amp;amp;channel=abpf26_4fe&amp;amp;pd_rd_w=JEkec&amp;amp;content-id=amzn1.sym.e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_p=e910b5fc-cddb-49ba-8035-79c05ed2efc4&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Accessories&amp;quot;\nE                   - text: Accessories\nE             - link &amp;quot;Shop toys from Characterverse - Shop all&amp;quot;:\nE               - /url: /b/?_encoding=UTF8&amp;amp;node=221509835011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&amp;amp;ref_=Marvel&amp;amp;pd_rd_w=jPYdu&amp;amp;content-id=amzn1.sym.50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_p=50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE               - heading &amp;quot;Shop toys from Characterverse&amp;quot; [level=3]\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Marvel&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=221509835011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22220459355011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%5D&amp;amp;ref_=Marvel&amp;amp;pd_rd_w=jPYdu&amp;amp;content-id=amzn1.sym.50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_p=50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Marvel&amp;quot;\nE                   - text: Marvel\nE               - listitem:\nE                 - link &amp;quot;Star Wars&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=221509835011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22220459350011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%5D&amp;amp;ref_=Marvel&amp;amp;pd_rd_w=jPYdu&amp;amp;content-id=amzn1.sym.50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_p=50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Star Wars&amp;quot;\nE                   - text: Star Wars\nE               - listitem:\nE                 - link &amp;quot;Disney Princesses&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=221509835011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22221401158011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%5D&amp;amp;ref_=Marvel&amp;amp;pd_rd_w=jPYdu&amp;amp;content-id=amzn1.sym.50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_p=50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Disney Princesses&amp;quot;\nE                   - text: Disney Princesses\nE               - listitem:\nE                 - link &amp;quot;Harry Potter&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=221509835011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22220459353011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%5D&amp;amp;ref_=Marvel&amp;amp;pd_rd_w=jPYdu&amp;amp;content-id=amzn1.sym.50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_p=50d8b30c-a7c5-4559-b7f9-1d15a70bbab9&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Harry Potter&amp;quot;\nE                   - text: Harry Potter\nE             - link &amp;quot;Shop Christmas decor by price - Shop all&amp;quot;:\nE               - /url: /b/?_encoding=UTF8&amp;amp;ie=UTF8&amp;amp;node=119011799011&amp;amp;pd_rd_w=fHJRE&amp;amp;content-id=amzn1.sym.0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_p=0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE               - heading &amp;quot;Shop Christmas decor by price&amp;quot; [level=3]\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Under $25&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;node=221509787011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22220459212011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_36%22%2C%22value%22%3A%220-2500%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&amp;amp;ref_=cct_cg_Hol26sbp_3a1&amp;amp;pd_rd_w=fHJRE&amp;amp;content-id=amzn1.sym.0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_p=0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Under $25&amp;quot;\nE                   - text: Under $25\nE               - listitem:\nE                 - link &amp;quot;Under $50&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;node=221509787011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22220459212011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_36%22%2C%22value%22%3A%220-5000%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&amp;amp;ref_=cct_cg_Hol26sbp_3b1&amp;amp;pd_rd_w=fHJRE&amp;amp;content-id=amzn1.sym.0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_p=0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Under $50&amp;quot;\nE                   - text: Under $50\nE               - listitem:\nE                 - link &amp;quot;Under $75&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;node=221509787011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22category%22%2C%22ridType%22%3A%22browse%22%2C%22value%22%3A%22220459212011%22%2C%22type%22%3A%22browse%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_36%22%2C%22value%22%3A%220-7500%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&amp;amp;ref_=cct_cg_Hol26sbp_3b1&amp;amp;pd_rd_w=fHJRE&amp;amp;content-id=amzn1.sym.0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_p=0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Under $75&amp;quot;\nE                   - text: Under $75\nE               - listitem:\nE                 - link &amp;quot;Under $100&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;_encoding=UTF8&amp;amp;node=221509787011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22category%22%2C%22ridType%22%3A%22browse%22%2C%22value%22%3A%22220459212011%22%2C%22type%22%3A%22browse%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_36%22%2C%22value%22%3A%220-10000%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&amp;amp;ref_=cct_cg_Hol26sbp_3c1&amp;amp;pd_rd_w=fHJRE&amp;amp;content-id=amzn1.sym.0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_p=0874092b-ea76-478e-ab9c-92330295eb29&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Under $100&amp;quot;\nE                   - text: Under $100\nE             - link &amp;quot;Shop 4+ star faves by price - Shop more Halloween&amp;quot;:\nE               - /url: /b/?_encoding=UTF8&amp;amp;node=220434624011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&amp;amp;pd_rd_w=DnBSY&amp;amp;content-id=amzn1.sym.0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_p=0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk#dossier-asin-grid\nE               - heading &amp;quot;Shop 4+ star faves by price&amp;quot; [level=3]\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Under $5&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=220434624011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_90%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%22122429091011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_36%22%2C%22value%22%3A%220-500%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&amp;amp;ref_=cml&amp;amp;pd_rd_w=DnBSY&amp;amp;content-id=amzn1.sym.0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_p=0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Under $5&amp;quot;\nE                   - text: Under $5\nE               - listitem:\nE                 - link &amp;quot;Under $10&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=220434624011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_90%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%22122429091011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_36%22%2C%22value%22%3A%220-1000%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&amp;amp;ref_=cml&amp;amp;pd_rd_w=DnBSY&amp;amp;content-id=amzn1.sym.0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_p=0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Under $10&amp;quot;\nE                   - text: Under $10\nE               - listitem:\nE                 - link &amp;quot;Under $25&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=220434624011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_90%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%22122429091011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_36%22%2C%22value%22%3A%220-2500%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&amp;amp;ref_=cml&amp;amp;pd_rd_w=DnBSY&amp;amp;content-id=amzn1.sym.0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_p=0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Under $25&amp;quot;\nE                   - text: Under $25\nE               - listitem:\nE                 - link &amp;quot;Under $50&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=220434624011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_90%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%22122429091011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_36%22%2C%22value%22%3A%220-5000%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22SEARCH_CONSTRAINT%22%7D%5D&amp;amp;ref_=cml&amp;amp;pd_rd_w=DnBSY&amp;amp;content-id=amzn1.sym.0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_p=0acbc64d-b81f-4bff-af56-b094919fe0de&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Under $50&amp;quot;\nE                   - text: Under $50\nE             - link &amp;quot;Get ready for spooky fun - Shop more Halloween&amp;quot;:\nE               - /url: /b/?_encoding=UTF8&amp;amp;node=118248191011&amp;amp;pd_rd_w=i8JC0&amp;amp;content-id=amzn1.sym.60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_p=60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE               - heading &amp;quot;Get ready for spooky fun&amp;quot; [level=3]\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Decor&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=220434590011&amp;amp;redirectionContext=%7B%22asins%22%3A%22B0FNQ8QT57%2CB0D78ZC3JD%22%2C%22filters%22%3A%7B%22p_n_condition-type%22%3A%226461716011%22%2C%22p_n_availability%22%3A%222661600011%22%7D%7D&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_90%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%22122429091011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&amp;amp;ref_=Decor&amp;amp;pd_rd_w=i8JC0&amp;amp;content-id=amzn1.sym.60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_p=60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Decor&amp;quot;\nE                   - text: Decor\nE               - listitem:\nE                 - link &amp;quot;Pumpkin carving&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=220434602011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22220617260011%2C219892948011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%5D&amp;amp;ref_=activies&amp;amp;pd_rd_w=i8JC0&amp;amp;content-id=amzn1.sym.60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_p=60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Pumpkin carving&amp;quot;\nE                   - text: Pumpkin carving\nE               - listitem:\nE                 - link &amp;quot;Party supplies&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=220434602011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22219892897011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%2C%7B%22rid%22%3A%22p_n_availability%22%2C%22value%22%3A%222661600011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22value%22%3A%226461716011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&amp;amp;ref_=partysupplies&amp;amp;pd_rd_w=i8JC0&amp;amp;content-id=amzn1.sym.60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_p=60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Party supplies&amp;quot;\nE                   - text: Party supplies\nE               - listitem:\nE                 - link &amp;quot;Trick-or-treating&amp;quot;:\nE                   - /url: /b/?_encoding=UTF8&amp;amp;node=220434602011&amp;amp;enabledRefinements=%5B%7B%22rid%22%3A%22p_n_availability%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%222661600011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22p_n_condition-type%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22value%22%3A%226461716011%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%2C%7B%22rid%22%3A%22category%22%2C%22value%22%3A%22220617260011%2C219892950011%22%2C%22ridType%22%3A%22browse%22%2C%22type%22%3A%22browse%22%7D%5D&amp;amp;ref_=activies&amp;amp;pd_rd_w=i8JC0&amp;amp;content-id=amzn1.sym.60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_p=60b81e68-53fe-4a1c-bc29-1c5882b393e3&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416#dossier-asin-grid\nE                   - img &amp;quot;Trick-or-treating&amp;quot;\nE                   - text: Trick-or-treating\nE             - link &amp;quot;15% off pre-loved pieces - Shop Amazon Luxury&amp;quot;:\nE               - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=207247666011&amp;amp;rh=n%3A207247666011&amp;amp;s=featured-rank&amp;amp;fs=true&amp;amp;qid=1787005309&amp;amp;xpid=8MdYy-5ev18ct&amp;amp;ref=sr_pg_1&amp;amp;pd_rd_w=DEyKn&amp;amp;content-id=amzn1.sym.596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_p=596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE               - heading &amp;quot;15% off pre-loved pieces&amp;quot; [level=3]\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Louis Vuitton&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=207247666011&amp;amp;rh=n%3A207247666011%2Cp_123%3A423616&amp;amp;s=featured-rank&amp;amp;dc=&amp;amp;fs=true&amp;amp;qid=1787606975&amp;amp;rnid=85457740011&amp;amp;xpid=8MdYy-5ev18ct&amp;amp;ref=sr_nr_p_123_24&amp;amp;ds=v1%3AZpVntXmOdRB524FPzFe4TBa6QmNP%2BeTNCMlJ1VMmBrI&amp;amp;pd_rd_w=DEyKn&amp;amp;content-id=amzn1.sym.596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_p=596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Louis Vuitton&amp;quot;\nE                   - text: Louis Vuitton\nE               - listitem:\nE                 - link &amp;quot;Cartier&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=207247666011&amp;amp;rh=n%3A207247666011%2Cp_123%3A233930&amp;amp;s=featured-rank&amp;amp;dc=&amp;amp;fs=true&amp;amp;qid=1787606930&amp;amp;rnid=85457740011&amp;amp;xpid=8MdYy-5ev18ct&amp;amp;ref=sr_nr_p_123_8&amp;amp;ds=v1%3AlB95aQe%2FZGV7TBiSjqFeKvFpM39FMvQIlbDfcXdKal8&amp;amp;pd_rd_w=DEyKn&amp;amp;content-id=amzn1.sym.596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_p=596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Cartier&amp;quot;\nE                   - text: Cartier\nE               - listitem:\nE                 - link &amp;quot;Herm\u00e8s&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=207247666011&amp;amp;rh=n%3A207247666011%2Cp_123%3A441155&amp;amp;s=featured-rank&amp;amp;dc=&amp;amp;fs=true&amp;amp;qid=1787606891&amp;amp;rnid=85457740011&amp;amp;xpid=8MdYy-5ev18ct&amp;amp;ref=sr_nr_p_123_21&amp;amp;ds=v1%3Ascf0PrRMQEB2cGDeSgXO09GHslAA69smBl%2BsETrAj6o&amp;amp;pd_rd_w=DEyKn&amp;amp;content-id=amzn1.sym.596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_p=596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Herm\u00e8s&amp;quot;\nE                   - text: Herm\u00e8s\nE               - listitem:\nE                 - link &amp;quot;Gucci&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=207247666011&amp;amp;rh=n%3A207247666011%2Cp_123%3A359001&amp;amp;s=featured-rank&amp;amp;dc=&amp;amp;fs=true&amp;amp;qid=1787607037&amp;amp;rnid=85457740011&amp;amp;xpid=8MdYy-5ev18ct&amp;amp;ref=sr_nr_p_123_19&amp;amp;ds=v1%3A4C8VvOk0EOngvRwcyE0Gpoxv0%2F7kyqV79UIxhJoWrYM&amp;amp;pd_rd_w=DEyKn&amp;amp;content-id=amzn1.sym.596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_p=596739b9-3570-4e1e-ae59-faf622848184&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Gucci&amp;quot;\nE                   - text: Gucci\nE             - link &amp;quot;Shop our top beauty picks - Explore Amazon Luxury&amp;quot;:\nE               - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=20657941011&amp;amp;rh=n%3A20657941011&amp;amp;s=date-desc-rank&amp;amp;_encoding=UTF8&amp;amp;pd_rd_w=ni1nz&amp;amp;content-id=amzn1.sym.97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_p=97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE               - heading &amp;quot;Shop our top beauty picks&amp;quot; [level=3]\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Makeup&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=20657941011&amp;amp;rh=n%3A18981045011%2Cn%3A20657941011%2Cn%3A21102543011&amp;amp;s=date-desc-rank&amp;amp;dc=&amp;amp;ds=v1%3AWixP%2B2RadUDP3WKlsGuSBZzphpKskpCuOfwsiflDytk&amp;amp;_encoding=UTF8&amp;amp;qid=1787327786&amp;amp;rnid=20657941011&amp;amp;pd_rd_w=ni1nz&amp;amp;content-id=amzn1.sym.97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_p=97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Makeup&amp;quot;\nE                   - text: Makeup\nE               - listitem:\nE                 - link &amp;quot;Fragrance&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=20657941011&amp;amp;rh=n%3A18981045011%2Cn%3A20657941011%2Cn%3A20657942011&amp;amp;s=date-desc-rank&amp;amp;dc=&amp;amp;ds=v1%3AIWIyMGoXbf4zDpRu54tY5mPqDwTOUMonN7ru2D8wQKE&amp;amp;_encoding=UTF8&amp;amp;qid=1787327786&amp;amp;rnid=20657941011&amp;amp;pd_rd_w=ni1nz&amp;amp;content-id=amzn1.sym.97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_p=97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Fragrance&amp;quot;\nE                   - text: Fragrance\nE               - listitem:\nE                 - link &amp;quot;Skin care&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=20657941011&amp;amp;rh=n%3A18981045011%2Cn%3A20657941011%2Cn%3A20657961011&amp;amp;s=date-desc-rank&amp;amp;dc=&amp;amp;ds=v1%3AxGwJJI5IUWOq3UpID7e4EfsKOyDak7WgIU8CFM3u04E&amp;amp;_encoding=UTF8&amp;amp;qid=1787327853&amp;amp;rnid=20657941011&amp;amp;pd_rd_w=ni1nz&amp;amp;content-id=amzn1.sym.97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_p=97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Skin care&amp;quot;\nE                   - text: Skin care\nE               - listitem:\nE                 - link &amp;quot;Hair care&amp;quot;:\nE                   - /url: /s/?_encoding=UTF8&amp;amp;i=luxury&amp;amp;bbn=20657941011&amp;amp;rh=n%3A18981045011%2Cn%3A20657941011%2Cn%3A23653219011&amp;amp;s=date-desc-rank&amp;amp;dc=&amp;amp;ds=v1%3AJiSuyj5IVcac%2BfzXkHDDCvF5TsspyOs%2FffyCGdcACdQ&amp;amp;_encoding=UTF8&amp;amp;qid=1787327762&amp;amp;rnid=20657941011&amp;amp;pd_rd_w=ni1nz&amp;amp;content-id=amzn1.sym.97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_p=97381b90-10fc-4b3b-bc8d-f067968c978f&amp;amp;pf_rd_r=YQ6PZGVTQPV5JEFBTM9G&amp;amp;pd_rd_wg=VOWKQ&amp;amp;pd_rd_r=e8c03d80-e9ef-4982-93ef-90a25ee7b416&amp;amp;ref_=pd_hp_d_r_btf_unk\nE                   - img &amp;quot;Hair care&amp;quot;\nE                   - text: Hair care\nE           - complementary &amp;quot;Your recently viewed items and featured recommendations&amp;quot;\nE           - button &amp;quot;Back to top&amp;quot;\nE           - heading &amp;quot;Get to Know Us&amp;quot; [level=6]\nE           - list:\nE             - listitem:\nE               - link &amp;quot;Careers&amp;quot;:\nE                 - /url: https://www.amazon.jobs\nE             - listitem:\nE               - link &amp;quot;Amazon Newsletter&amp;quot;:\nE                 - /url: https://www.aboutamazon.com/subscribe?utm_source=amazon_com&amp;amp;utm_medium=amazonfooter&amp;amp;utm_campaign=newslettersubscribers&amp;amp;utm_term=amazonnewssignup\nE             - listitem:\nE               - link &amp;quot;About Amazon&amp;quot;:\nE                 - /url: https://www.aboutamazon.com/?utm_source=gateway&amp;amp;utm_medium=footer&amp;amp;token=about\nE             - listitem:\nE               - link &amp;quot;Accessibility&amp;quot;:\nE                 - /url: https://www.amazon.com/b?node=15701038011&amp;amp;ie=UTF8\nE             - listitem:\nE               - link &amp;quot;Sustainability&amp;quot;:\nE                 - /url: https://sustainability.aboutamazon.com/?utm_source=gateway&amp;amp;utm_medium=footer&amp;amp;ref_=susty_footer\nE             - listitem:\nE               - link &amp;quot;Press Center&amp;quot;:\nE                 - /url: https://www.amazon.com/pr\nE             - listitem:\nE               - link &amp;quot;Investor Relations&amp;quot;:\nE                 - /url: https://www.amazon.com/ir\nE             - listitem:\nE               - link &amp;quot;Amazon Devices&amp;quot;:\nE                 - /url: /gp/browse.html?node=2102313011&amp;amp;ref_=footer_devices\nE             - listitem:\nE               - link &amp;quot;Amazon Science&amp;quot;:\nE                 - /url: https://www.amazon.science\nE           - heading &amp;quot;Make Money with Us&amp;quot; [level=6]\nE           - list:\nE             - listitem:\nE               - link &amp;quot;Sell on Amazon&amp;quot;:\nE                 - /url: https://sell.amazon.com/?ld=AZFSSOA_FTSELL-C&amp;amp;ref_=footer_soa\nE             - listitem:\nE               - link &amp;quot;Sell apps on Amazon&amp;quot;:\nE                 - /url: https://developer.amazon.com\nE             - listitem:\nE               - link &amp;quot;Supply to Amazon&amp;quot;:\nE                 - /url: https://supply.amazon.com\nE             - listitem:\nE               - link &amp;quot;Protect &amp;amp; Build Your Brand&amp;quot;:\nE                 - /url: https://sell.amazon.com/brand-registry?ld=AZUSSOA_ABR-FT\nE             - listitem:\nE               - link &amp;quot;Become an Affiliate&amp;quot;:\nE                 - /url: https://affiliate-program.amazon.com/\nE             - listitem:\nE               - link &amp;quot;Become a Delivery Driver&amp;quot;:\nE                 - /url: https://dspjobhub.com/\nE             - listitem:\nE               - link &amp;quot;Start a Package Delivery Business&amp;quot;:\nE                 - /url: https://logistics.amazon.com/marketing?utm_source=amzn&amp;amp;utm_medium=footer&amp;amp;utm_campaign=home\nE             - listitem:\nE               - link &amp;quot;Advertise Your Products&amp;quot;:\nE                 - /url: https://advertising.amazon.com/?ref=ext_amzn_ftr\nE             - listitem:\nE               - link &amp;quot;Self-Publish with Us&amp;quot;:\nE                 - /url: /gp/seller-account/mm-summary-page.html?ld=AZFooterSelfPublish&amp;amp;topic=200260520&amp;amp;ref_=footer_publishing\nE             - listitem:\nE               - link &amp;quot;Become an Amazon Hub Partner&amp;quot;:\nE                 - /url: https://www.amazon.com/b?node=216188543011\nE             - listitem:\nE               - link &amp;quot;See More Ways to Make Money&amp;quot;:\nE                 - /url: /b/?node=18190131011&amp;amp;ld=AZUSSOA-seemore&amp;amp;ref_=footer_seemore\nE           - heading &amp;quot;Amazon Payment Products&amp;quot; [level=6]\nE           - list:\nE             - listitem:\nE               - link &amp;quot;Amazon Visa&amp;quot;:\nE                 - /url: /iss/credit/rewardscardmember?plattr=CBFOOT&amp;amp;ref_=footer_cbcc\nE             - listitem:\nE               - link &amp;quot;Amazon Store Card&amp;quot;:\nE                 - /url: /credit/storecard/member?plattr=PLCCFOOT&amp;amp;ref_=footer_plcc\nE             - listitem:\nE               - link &amp;quot;Amazon Secured Card&amp;quot;:\nE                 - /url: /dp/product/B084KP3NG6?plattr=SCFOOT&amp;amp;ref_=footer_ACB\nE             - listitem:\nE               - link &amp;quot;Amazon Business Card&amp;quot;:\nE                 - /url: /dp/B0DVBL912R?plattr=ACOMFO&amp;amp;ie=UTF-8\nE             - listitem:\nE               - link &amp;quot;Shop with Points&amp;quot;:\nE                 - /url: https://www.amazon.com/hp/shopwithpoints/servicing\nE             - listitem:\nE               - link &amp;quot;Credit Card Marketplace&amp;quot;:\nE                 - /url: /gp/browse.html?node=3561432011&amp;amp;ref_=footer_ccmp\nE             - listitem:\nE               - link &amp;quot;Reload Your Balance&amp;quot;:\nE                 - /url: /gp/browse.html?node=10232440011&amp;amp;ref_=footer_reload_us\nE             - listitem:\nE               - link &amp;quot;Gift Cards&amp;quot;:\nE                 - /url: https://www.amazon.com/b/?node=2238192011&amp;amp;ref=shop_footer_payments_gc_desktop\nE             - listitem:\nE               - link &amp;quot;Amazon Currency Converter&amp;quot;:\nE                 - /url: /gp/browse.html?node=388305011&amp;amp;ref_=footer_tfx\nE           - heading &amp;quot;Let Us Help You&amp;quot; [level=6]\nE           - list:\nE             - listitem:\nE               - link &amp;quot;Your Account&amp;quot;:\nE                 - /url: https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya\nE             - listitem:\nE               - link &amp;quot;Your Orders&amp;quot;:\nE                 - /url: https://www.amazon.com/gp/css/order-history?ref_=footer_yo\nE             - listitem:\nE               - link &amp;quot;Shipping Rates &amp;amp; Policies&amp;quot;:\nE                 - /url: /gp/help/customer/display.html?nodeId=468520&amp;amp;ref_=footer_shiprates\nE             - listitem:\nE               - link &amp;quot;Amazon Prime&amp;quot;:\nE                 - /url: /gp/prime?ref_=footer_prime\nE             - listitem:\nE               - link &amp;quot;Returns &amp;amp; Replacements&amp;quot;:\nE                 - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4\nE             - listitem:\nE               - link &amp;quot;Manage Your Content and Devices&amp;quot;:\nE                 - /url: /hz/mycd/myx?ref_=footer_myk\nE             - listitem:\nE               - link &amp;quot;Recalls and Product Safety Alerts&amp;quot;:\nE                 - /url: https://www.amazon.com/product-safety-alerts?ref_=footer_bsx_ypsa\nE             - listitem:\nE               - link &amp;quot;Registry &amp;amp; Gift List&amp;quot;:\nE                 - /url: /registries?ref_=nav_footer_registry_giftlist_desktop\nE             - listitem:\nE               - link &amp;quot;Help&amp;quot;:\nE                 - /url: /gp/help/customer/display.html?nodeId=508510&amp;amp;ref_=footer_gw_m_b_he\nE           - link &amp;quot;Amazon US Home&amp;quot;:\nE             - /url: /?ref_=footer_logo\nE           - link &amp;quot;Choose a language for shopping. Current selection is English.&amp;quot;:\nE             - /url: /customer-preferences/edit?ie=UTF8&amp;amp;preferencesReturnUrl=%2F&amp;amp;ref_=footer_lang\nE             - text: English\nE           - button &amp;quot;Expand to Change Language or Country&amp;quot;\nE           - button &amp;quot;Choose a country/region for shopping. The current selection is United States.&amp;quot;: United States\nE           - navigation &amp;quot;More on Amazon&amp;quot;:\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Amazon Music Stream millions of songs&amp;quot;:\nE                   - /url: https://music.amazon.com?ref=dm_aff_amz_com\nE                   - heading &amp;quot;Amazon Music&amp;quot; [level=5]\nE                   - text: Stream millions of songs\nE               - listitem:\nE                 - link &amp;quot;Amazon Ads Reach customers wherever they spend their time&amp;quot;:\nE                   - /url: https://advertising.amazon.com/?ref=footer_advtsing_amzn_com\nE                   - heading &amp;quot;Amazon Ads&amp;quot; [level=5]\nE                   - text: Reach customers wherever they spend their time\nE               - listitem:\nE                 - link &amp;quot;6pm Score deals on fashion brands&amp;quot;:\nE                   - /url: https://www.6pm.com\nE                   - heading &amp;quot;6pm&amp;quot; [level=5]\nE                   - text: Score deals on fashion brands\nE               - listitem:\nE                 - link &amp;quot;AbeBooks Books, art &amp;amp; collectibles&amp;quot;:\nE                   - /url: https://www.abebooks.com\nE                   - heading &amp;quot;AbeBooks&amp;quot; [level=5]\nE                   - text: Books, art &amp;amp; collectibles\nE               - listitem:\nE                 - link &amp;quot;ACX Audiobook Publishing Made Easy&amp;quot;:\nE                   - /url: https://www.acx.com/\nE                   - heading &amp;quot;ACX&amp;quot; [level=5]\nE                   - text: Audiobook Publishing Made Easy\nE               - listitem:\nE                 - link &amp;quot;Sell on Amazon Start a Selling Account&amp;quot;:\nE                   - /url: https://sell.amazon.com/?ld=AZUSSOA-footer-aff&amp;amp;ref_=footer_sell\nE                   - heading &amp;quot;Sell on Amazon&amp;quot; [level=5]\nE                   - text: Start a Selling Account\nE               - listitem:\nE                 - link &amp;quot;Veeqo Shipping Software Inventory Management&amp;quot;:\nE                   - /url: https://www.veeqo.com/?utm_source=amazon&amp;amp;utm_medium=website&amp;amp;utm_campaign=footer\nE                   - heading &amp;quot;Veeqo&amp;quot; [level=5]\nE                   - text: Shipping Software Inventory Management\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Amazon Business Everything For Your Business&amp;quot;:\nE                   - /url: /business?ref_=footer_retail_b2b\nE                   - heading &amp;quot;Amazon Business&amp;quot; [level=5]\nE                   - text: Everything For Your Business\nE               - listitem:\nE                 - link &amp;quot;Amazon Fresh Groceries &amp;amp; More Right To Your Door&amp;quot;:\nE                   - /url: /alm/storefront?almBrandId=QW1hem9uIEZyZXNo&amp;amp;ref_=footer_aff_fresh\nE                   - heading &amp;quot;Amazon Fresh&amp;quot; [level=5]\nE                   - text: Groceries &amp;amp; More Right To Your Door\nE               - listitem:\nE                 - link &amp;quot;AmazonGlobal Ship Orders Internationally&amp;quot;:\nE                   - /url: /gp/browse.html?node=20338496011&amp;amp;ref_=footer_amazonglobal\nE                   - heading &amp;quot;AmazonGlobal&amp;quot; [level=5]\nE                   - text: Ship Orders Internationally\nE               - listitem:\nE                 - link &amp;quot;Home Services Experienced Pros Happiness Guarantee&amp;quot;:\nE                   - /url: /services?ref_=footer_services\nE                   - heading &amp;quot;Home Services&amp;quot; [level=5]\nE                   - text: Experienced Pros Happiness Guarantee\nE               - listitem:\nE                 - link &amp;quot;Amazon Web Services Scalable Cloud Computing Services&amp;quot;:\nE                   - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&amp;amp;sc_campaign=amazonfooter\nE                   - heading &amp;quot;Amazon Web Services&amp;quot; [level=5]\nE                   - text: Scalable Cloud Computing Services\nE               - listitem:\nE                 - link &amp;quot;Audible Listen to Books &amp;amp; Original Audio Performances&amp;quot;:\nE                   - /url: https://www.audible.com\nE                   - heading &amp;quot;Audible&amp;quot; [level=5]\nE                   - text: Listen to Books &amp;amp; Original Audio Performances\nE               - listitem:\nE                 - link &amp;quot;Box Office Mojo Find Movie Box Office Data&amp;quot;:\nE                   - /url: https://www.boxofficemojo.com/?ref_=amzn_nav_ftr\nE                   - heading &amp;quot;Box Office Mojo&amp;quot; [level=5]\nE                   - text: Find Movie Box Office Data\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Goodreads Book reviews &amp;amp; recommendations&amp;quot;:\nE                   - /url: https://www.goodreads.com\nE                   - heading &amp;quot;Goodreads&amp;quot; [level=5]\nE                   - text: Book reviews &amp;amp; recommendations\nE               - listitem:\nE                 - link &amp;quot;IMDb Movies, TV &amp;amp; Celebrities&amp;quot;:\nE                   - /url: https://www.imdb.com\nE                   - heading &amp;quot;IMDb&amp;quot; [level=5]\nE                   - text: Movies, TV &amp;amp; Celebrities\nE               - listitem:\nE                 - link &amp;quot;IMDbPro Get Info Entertainment Professionals Need&amp;quot;:\nE                   - /url: https://pro.imdb.com?ref_=amzn_nav_ftr\nE                   - heading &amp;quot;IMDbPro&amp;quot; [level=5]\nE                   - text: Get Info Entertainment Professionals Need\nE               - listitem:\nE                 - link &amp;quot;Kindle Direct Publishing Indie Digital &amp;amp; Print Publishing Made Easy&amp;quot;:\nE                   - /url: https://kdp.amazon.com\nE                   - heading &amp;quot;Kindle Direct Publishing&amp;quot; [level=5]\nE                   - text: Indie Digital &amp;amp; Print Publishing Made Easy\nE               - listitem:\nE                 - link &amp;quot;Amazon Photos Unlimited Photo Storage Free With Prime&amp;quot;:\nE                   - /url: /gp/browse.html?node=13234696011&amp;amp;ref_=_gno_p_foot\nE                   - heading &amp;quot;Amazon Photos&amp;quot; [level=5]\nE                   - text: Unlimited Photo Storage Free With Prime\nE               - listitem:\nE                 - link &amp;quot;Prime Video Direct Video Distribution Made Easy&amp;quot;:\nE                   - /url: https://videodirect.amazon.com/home/landing\nE                   - heading &amp;quot;Prime Video Direct&amp;quot; [level=5]\nE                   - text: Video Distribution Made Easy\nE               - listitem:\nE                 - link &amp;quot;Shopbop Designer Fashion Brands&amp;quot;:\nE                   - /url: https://www.shopbop.com\nE                   - heading &amp;quot;Shopbop&amp;quot; [level=5]\nE                   - text: Designer Fashion Brands\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Amazon Resale Great Deals on Quality Used Products&amp;quot;:\nE                   - /url: /gp/browse.html?node=10158976011&amp;amp;ref_=footer_wrhsdls\nE                   - heading &amp;quot;Amazon Resale&amp;quot; [level=5]\nE                   - text: Great Deals on Quality Used Products\nE               - listitem:\nE                 - link &amp;quot;Whole Foods Market America\u2019s Healthiest Grocery Store&amp;quot;:\nE                   - /url: https://www.wholefoodsmarket.com\nE                   - heading &amp;quot;Whole Foods Market&amp;quot; [level=5]\nE                   - text: America\u2019s Healthiest Grocery Store\nE               - listitem:\nE                 - link &amp;quot;Woot! Deals and Shenanigans&amp;quot;:\nE                   - /url: https://www.woot.com/\nE                   - heading &amp;quot;Woot!&amp;quot; [level=5]\nE                   - text: Deals and Shenanigans\nE               - listitem:\nE                 - link &amp;quot;Zappos Shoes &amp;amp; Clothing&amp;quot;:\nE                   - /url: https://www.zappos.com\nE                   - heading &amp;quot;Zappos&amp;quot; [level=5]\nE                   - text: Shoes &amp;amp; Clothing\nE               - listitem:\nE                 - link &amp;quot;Ring Smart Home Security Systems&amp;quot;:\nE                   - /url: https://ring.com\nE                   - heading &amp;quot;Ring&amp;quot; [level=5]\nE                   - text: Smart Home Security Systems\nE               - listitem:\nE                 - link &amp;quot;eero WiFi Stream 4K Video in Every Room&amp;quot;:\nE                   - /url: https://eero.com/\nE                   - heading &amp;quot;eero WiFi&amp;quot; [level=5]\nE                   - text: Stream 4K Video in Every Room\nE               - listitem:\nE                 - link &amp;quot;Blink Smart Security for Every Home&amp;quot;:\nE                   - /url: https://blinkforhome.com/?ref=nav_footer\nE                   - heading &amp;quot;Blink&amp;quot; [level=5]\nE                   - text: Smart Security for Every Home\nE             - list:\nE               - listitem:\nE                 - link &amp;quot;Neighbors App Real-Time Crime &amp;amp; Safety Alerts&amp;quot;:\nE                   - /url: https://shop.ring.com/pages/neighbors-app\nE                   - heading &amp;quot;Neighbors App&amp;quot; [level=5]\nE                   - text: Real-Time Crime &amp;amp; Safety Alerts\nE               - listitem:\nE                 - link &amp;quot;PillPack Pharmacy Simplified&amp;quot;:\nE                   - /url: https://www.pillpack.com\nE                   - heading &amp;quot;PillPack&amp;quot; [level=5]\nE                   - text: Pharmacy Simplified\nE               - listitem:\nE                 - link &amp;quot;Amazon Renewed Refurbished tech you can trust&amp;quot;:\nE                   - /url: /gp/browse.html?node=12653393011&amp;amp;ref_=footer_usrenew\nE                   - heading &amp;quot;Amazon Renewed&amp;quot; [level=5]\nE                   - text: Refurbished tech you can trust\nE           - list:\nE             - listitem:\nE               - link &amp;quot;Conditions of Use&amp;quot;:\nE                 - /url: /gp/help/customer/display.html?nodeId=508088&amp;amp;ref_=footer_cou\nE             - listitem:\nE               - link &amp;quot;Privacy Notice&amp;quot;:\nE                 - /url: /gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ&amp;amp;ref_=footer_privacy\nE             - listitem:\nE               - link &amp;quot;Consumer Health Data Privacy Disclosure&amp;quot;:\nE                 - /url: /gp/help/customer/display.html?ie=UTF8&amp;amp;nodeId=TnACMrGVghHocjL8KB&amp;amp;ref_=footer_consumer_health_data_privacy\nE             - listitem:\nE               - link &amp;quot;Your Ads Privacy Choices&amp;quot;:\nE                 - /url: /privacyprefs?ref_=footer_iba\nE             - listitem\nE           - text: \u00a9 1996-2026, Amazon.com, Inc. or its affiliates\n\ntests\\test_home.py:26: AssertionError\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+  </body>
+</html>
